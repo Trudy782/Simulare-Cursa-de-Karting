@@ -25,6 +25,10 @@
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
 
 int main()
@@ -43,10 +47,40 @@ int main()
 		return -1;
 	}
 
+	glfwMakeContextCurrent(window);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
+	glfwSetKeyCallback(window, key_callback);
+
+
+	
+	glewInit();
+
 	
 	// glfw: terminate, clearing all previously allocated GLFW resources
 	glfwTerminate();
 	return 0;
+}
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+
+}
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+
+}
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+
+}
+
+void scroll_callback(GLFWwindow* window, double xoffset, double yOffset)
+{
+
 }
 
 
