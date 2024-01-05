@@ -135,6 +135,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ProcessInput.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Skybox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="ProcessInput.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderSource.h" />
+    <ClInclude Include="Skybox.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Basic.shader" />
