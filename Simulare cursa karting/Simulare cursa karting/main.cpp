@@ -1,7 +1,9 @@
 #pragma once
 
+#include "Application.h"
+
 int main()
 {
-	
-	return 0;
+	Application application;
+	application.Run();
 }
