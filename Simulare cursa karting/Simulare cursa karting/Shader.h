@@ -8,6 +8,8 @@
 #define GLM_FORCE_CTOR_INIT
 #include <glm.hpp>
 
+
+
 class Shader
 {
 	enum class ShaderType

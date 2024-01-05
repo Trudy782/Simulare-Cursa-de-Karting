@@ -43,7 +43,7 @@ bool Application::InitWindow()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Prejmer Raceway in the METAVERSE", NULL, NULL);
+	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Simulare Cursa de Karting", NULL, NULL);
 	glfwMakeContextCurrent(window);
 
 	glewInit();
