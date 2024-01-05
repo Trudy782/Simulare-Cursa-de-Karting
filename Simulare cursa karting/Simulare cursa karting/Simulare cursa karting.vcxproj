@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glew-2.1.0\include;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glm-stable\glm;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include\GLFW;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glew-2.1.0\include;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glm-stable\glm;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include\GLFW;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\stb-master;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glew-2.1.0\lib\Release\Win32;C:\Users\ichim\OneDrive\Desktop\faculta\INFO_APLICATA\II\Grafica3D\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -133,12 +133,22 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProcessInput.cpp" />
     <ClCompile Include="Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="ProcessInput.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderSource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basic.shader" />
+    <None Include="Blending.shader" />
+    <None Include="Map.shader" />
+    <None Include="Skybox.shader" />
+    <None Include="Texture.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
