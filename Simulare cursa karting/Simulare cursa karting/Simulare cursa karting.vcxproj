@@ -149,6 +149,7 @@
     <ClInclude Include="Kart.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="OBJLoader.h" />
     <ClInclude Include="ProcessInput.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderSource.h" />
